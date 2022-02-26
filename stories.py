@@ -3,16 +3,12 @@
 
 class Story:
     """Madlibs story.
-
     To  make a story, pass a list of prompts, and the text
     of the template.
-
         >>> s = Story(["noun", "verb"],
         ...     "I love to {verb} a good {noun}.")
-
     To generate text from a story, pass in a dictionary-like thing
     of {prompt: answer, promp:answer):
-
         >>> ans = {"verb": "eat", "noun": "mango"}
         >>> s.generate(ans)
         'I love to eat a good mango.'
@@ -72,4 +68,3 @@ story3 = Story(
 )
 
 stories = {story.code: story for story in [story1, story2, story3]}
-

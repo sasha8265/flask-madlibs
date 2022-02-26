@@ -8,9 +8,14 @@
     <title>Madlibs</title>
 </head>
 <body>
-    <h1>Madlibs</h1>
-    <form action="/story.html">
 
+    <h1>Madlibs</h1>
+    <form action="/story">
+        {% for prompt in prompts %}
+            <label for="{{prompt}}">{{prompt}}</label>
+            <input type="text" name="{{prompt}}">
+        {%endfor%}
+        <button>Make Madlib!</button>
     </form>
     
 </body>
